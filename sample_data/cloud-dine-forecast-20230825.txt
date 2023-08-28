@@ -1,0 +1,432 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -111.5790315,
+                    40.659772099999998
+                ],
+                [
+                    -111.5755028,
+                    40.637985899999997
+                ],
+                [
+                    -111.5468319,
+                    40.640656799999995
+                ],
+                [
+                    -111.55035460000001,
+                    40.662443299999993
+                ],
+                [
+                    -111.5790315,
+                    40.659772099999998
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "updated": "2023-08-25T07:58:13+00:00",
+        "units": "us",
+        "forecastGenerator": "BaselineForecastGenerator",
+        "generatedAt": "2023-08-25T09:32:52+00:00",
+        "updateTime": "2023-08-25T07:58:13+00:00",
+        "validTimes": "2023-08-25T01:00:00+00:00/P8D",
+        "elevation": {
+            "unitCode": "wmoUnit:m",
+            "value": 2610.9168
+        },
+        "periods": [
+            {
+                "number": 1,
+                "name": "Overnight",
+                "startTime": "2023-08-25T03:00:00-06:00",
+                "endTime": "2023-08-25T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 53,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 6.1111111111111107
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 64
+                },
+                "windSpeed": "6 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 53. South wind around 6 mph."
+            },
+            {
+                "number": 2,
+                "name": "Friday",
+                "startTime": "2023-08-25T06:00:00-06:00",
+                "endTime": "2023-08-25T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 63,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 50
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 10.555555555555555
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 74
+                },
+                "windSpeed": "7 mph",
+                "windDirection": "ENE",
+                "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,50?size=medium",
+                "shortForecast": "Mostly Sunny then Chance Showers And Thunderstorms",
+                "detailedForecast": "A chance of showers and thunderstorms after noon. Mostly sunny, with a high near 63. East northeast wind around 7 mph. Chance of precipitation is 50%."
+            },
+            {
+                "number": 3,
+                "name": "Friday Night",
+                "startTime": "2023-08-25T18:00:00-06:00",
+                "endTime": "2023-08-26T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 54,
+                "temperatureUnit": "F",
+                "temperatureTrend": "rising",
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 20
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 9.4444444444444446
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 65
+                },
+                "windSpeed": "8 mph",
+                "windDirection": "ESE",
+                "icon": "https://api.weather.gov/icons/land/night/tsra_hi,20/few?size=medium",
+                "shortForecast": "Slight Chance Showers And Thunderstorms then Mostly Clear",
+                "detailedForecast": "A slight chance of showers and thunderstorms before midnight. Mostly clear. Low around 54, with temperatures rising to around 56 overnight. East southeast wind around 8 mph. Chance of precipitation is 20%."
+            },
+            {
+                "number": 4,
+                "name": "Saturday",
+                "startTime": "2023-08-26T06:00:00-06:00",
+                "endTime": "2023-08-26T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 66,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 20
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 8.8888888888888893
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 68
+                },
+                "windSpeed": "5 to 8 mph",
+                "windDirection": "NE",
+                "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium",
+                "shortForecast": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+                "detailedForecast": "A slight chance of showers and thunderstorms after noon. Mostly sunny, with a high near 66. Northeast wind 5 to 8 mph. Chance of precipitation is 20%."
+            },
+            {
+                "number": 5,
+                "name": "Saturday Night",
+                "startTime": "2023-08-26T18:00:00-06:00",
+                "endTime": "2023-08-27T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 56,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 7.2222222222222223
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 53
+                },
+                "windSpeed": "8 mph",
+                "windDirection": "ENE",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 56. East northeast wind around 8 mph."
+            },
+            {
+                "number": 6,
+                "name": "Sunday",
+                "startTime": "2023-08-27T06:00:00-06:00",
+                "endTime": "2023-08-27T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 66,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 20
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 8.3333333333333339
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 61
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "SSW",
+                "icon": "https://api.weather.gov/icons/land/day/sct/tsra_hi,20?size=medium",
+                "shortForecast": "Mostly Sunny then Slight Chance Showers And Thunderstorms",
+                "detailedForecast": "A slight chance of showers and thunderstorms after noon. Mostly sunny, with a high near 66. Chance of precipitation is 20%."
+            },
+            {
+                "number": 7,
+                "name": "Sunday Night",
+                "startTime": "2023-08-27T18:00:00-06:00",
+                "endTime": "2023-08-28T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 53,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 6.666666666666667
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 53
+                },
+                "windSpeed": "6 to 10 mph",
+                "windDirection": "NE",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 53."
+            },
+            {
+                "number": 8,
+                "name": "Monday",
+                "startTime": "2023-08-28T06:00:00-06:00",
+                "endTime": "2023-08-28T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 67,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 7.7777777777777777
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 58
+                },
+                "windSpeed": "6 to 10 mph",
+                "windDirection": "NNE",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 67."
+            },
+            {
+                "number": 9,
+                "name": "Monday Night",
+                "startTime": "2023-08-28T18:00:00-06:00",
+                "endTime": "2023-08-29T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 53,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 5
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 48
+                },
+                "windSpeed": "7 to 10 mph",
+                "windDirection": "NNW",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 53."
+            },
+            {
+                "number": 10,
+                "name": "Tuesday",
+                "startTime": "2023-08-29T06:00:00-06:00",
+                "endTime": "2023-08-29T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 69,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 6.1111111111111107
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 55
+                },
+                "windSpeed": "8 to 14 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 69."
+            },
+            {
+                "number": 11,
+                "name": "Tuesday Night",
+                "startTime": "2023-08-29T18:00:00-06:00",
+                "endTime": "2023-08-30T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 55,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 4.4444444444444446
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 43
+                },
+                "windSpeed": "9 to 15 mph",
+                "windDirection": "SSW",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 55."
+            },
+            {
+                "number": 12,
+                "name": "Wednesday",
+                "startTime": "2023-08-30T06:00:00-06:00",
+                "endTime": "2023-08-30T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 68,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 5.5555555555555554
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 47
+                },
+                "windSpeed": "8 to 14 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 68."
+            },
+            {
+                "number": 13,
+                "name": "Wednesday Night",
+                "startTime": "2023-08-30T18:00:00-06:00",
+                "endTime": "2023-08-31T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 52,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 3.8888888888888888
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 48
+                },
+                "windSpeed": "8 to 14 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/night/rain_showers?size=medium",
+                "shortForecast": "Slight Chance Rain Showers",
+                "detailedForecast": "A slight chance of rain showers. Partly cloudy, with a low around 52."
+            },
+            {
+                "number": 14,
+                "name": "Thursday",
+                "startTime": "2023-08-31T06:00:00-06:00",
+                "endTime": "2023-08-31T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 63,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 7.7777777777777777
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 56
+                },
+                "windSpeed": "9 to 14 mph",
+                "windDirection": "SSW",
+                "icon": "https://api.weather.gov/icons/land/day/rain_showers/tsra_hi?size=medium",
+                "shortForecast": "Chance Showers And Thunderstorms",
+                "detailedForecast": "A slight chance of rain showers before noon, then a chance of showers and thunderstorms. Mostly sunny, with a high near 63."
+            }
+        ]
+    }
+}
