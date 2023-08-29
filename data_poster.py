@@ -1,20 +1,26 @@
-#
+#!/usr/bin/env python3
 """
-Send forecast data into NiFi
+Simple Python 3 script that uses HTTP POST
+to send forecast data into NiFi at regular intervals
+as part of a demo
 """
-
+import os
+from pathlib import Path
 import json
 import requests
 
-url = 'http://localhost:65432/forecast'
+URL = 'http://localhost:65432/forecast'
 
-file_name = "sample_data/cloud-dine-forecast-20230815.txt"
+DIRPATH = 'sample_data'
 
-# Open JSON file:
-f = open(file_name)
-# return JSON dictionary:
-json_data = json.load(f)
+sorted_files = sorted(Path(DIRPATH).iterdir(), key=os.path.getmtime)
 
-result = requests.post(url, json = json_data)
+for file_name in sorted_files:
+    # Open JSON file:
+    files = open(file_name)
+    # return JSON dictionary:
+    json_data = json.load(files)
+    headers = {'Content-type': 'application/json', 'Accept': 'text/plain', 'Content-Disposition': 'attachment', 'filename': file_name.name}
+    result = requests.post(URL, json=json_data, headers=headers)
 
-print(result.text)
+    print("result for", file_name, "was", result.status_code)
