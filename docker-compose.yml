@@ -38,7 +38,7 @@ services:
         restart: on-failure
         ports:
             - '8091:8080'
-            - '65432:65432'
+            - '65432:65432'                  # Arbitrary port for sending in data via HTTP into NiFi 
         environment:
             - NIFI_WEB_HTTP_PORT=8080
             - NIFI_CLUSTER_IS_NODE=true
@@ -60,7 +60,7 @@ services:
             - nifi_state:/opt/nifi/nifi-current/state
             - nifi_logs:/opt/nifi/nifi-current/logs
             - nifi_conf:/opt/nifi/nifi-current/conf
-            - ./nifi/sampledata:/opt/nifi/nifi-current/sampledata
+            - ./sample_data:/opt/nifi/nifi-current/sample_data         # mount host path for reading sample data
         networks:
             - my_persistent_network
 networks:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Simple Python 3 script that uses HTTP POST
-to send forecast data into NiFi at regular intervals
+to send data into NiFi at regular intervals
 as part of a demo
 """
 import os
@@ -9,10 +9,11 @@ from pathlib import Path
 import json
 import requests
 
-URL = 'http://localhost:65432/forecast'
+URL = 'http://localhost:65432/demo'
 
 DIRPATH = 'sample_data'
 
+# Sort input files by last modified - UPDATE TO BE MORE DETERMINISTIC:
 sorted_files = sorted(Path(DIRPATH).iterdir(), key=os.path.getmtime)
 
 for file_name in sorted_files:
