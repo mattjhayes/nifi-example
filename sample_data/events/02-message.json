@@ -1,0 +1,10 @@
+{
+    "source_system": "fulfilmentSystem",
+    "message_type": "orderSubmitted",
+    "message_content": {
+        "Item": "Crazy Hat",
+        "Quantity": "5",
+        "Customer": "Mavis",
+        "Store": "Eketahuna"
+    }
+}

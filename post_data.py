@@ -9,9 +9,9 @@ from pathlib import Path
 import json
 import requests
 
-URL = 'http://localhost:65432/demo'
+URL = 'http://localhost:65432/events'
 
-DIRPATH = 'sample_data'
+DIRPATH = 'sample_data/events'
 
 # Sort input files by last modified - UPDATE TO BE MORE DETERMINISTIC:
 sorted_files = sorted(Path(DIRPATH).iterdir(), key=os.path.getmtime)
