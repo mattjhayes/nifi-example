@@ -1,0 +1,10 @@
+{
+    "source_system": "fulfilmentSystem",
+    "message_type": "orderSubmitted",
+    "message_content": {
+        "Item": "Feather Cap",
+        "Quantity": "1",
+        "Customer": "Ernie",
+        "Store": "Oban"
+    }
+}

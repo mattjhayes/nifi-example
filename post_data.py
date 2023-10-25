@@ -13,8 +13,8 @@ URL = 'http://localhost:65432/events'
 
 DIRPATH = 'sample_data/events'
 
-# Sort input files by last modified - UPDATE TO BE MORE DETERMINISTIC:
-sorted_files = sorted(Path(DIRPATH).iterdir(), key=os.path.getmtime)
+# Sort input files alphabetically:
+sorted_files = sorted(Path(DIRPATH).iterdir())
 
 for file_name in sorted_files:
     # Open JSON file:
