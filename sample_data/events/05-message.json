@@ -2,7 +2,7 @@
     "source_system": "contactCenter",
     "message_type": "customerQuery",
     "message_content": {
-        "customer_query": "Where can I buy your hats from?",
+        "customer_query": "Where can I buy your stuff from?",
         "session_ID" : "A123457"
     } 
 }

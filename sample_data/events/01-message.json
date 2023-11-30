@@ -2,7 +2,7 @@
     "source_system": "contactCenter",
     "message_type": "customerQuery",
     "message_content": {
-        "customer_query": "Why are your hats so ugly?",
+        "customer_query": "Hello, is there anybody out there?",
         "session_ID" : "A123456"
     } 
 }

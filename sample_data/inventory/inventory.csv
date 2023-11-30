@@ -1,8 +1,11 @@
 Store,Item,Quantity
-Hamilton,Crazy Hat,32
-Masterton,Crazy Hat,14
-Kapiti,Crazy Hat,5
-Eketahuna,Crazy Hat,431
-Nelson,Crazy Hat,1
-Oban,Crazy Hat,24
-
+Paris,mug,15
+Hamilton,Widget,32
+Masterton,Foo Bar,14
+Masterton,Widget,3
+Kapiti,Thingamajig,5
+Eketahuna,Widget,431
+Nelson,Hoojamaflip,1
+BAD DATA ROW
+Oban,Widget,24
+Oban,whatchamacallit,124
